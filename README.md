@@ -7,7 +7,7 @@ O site apresenta meus projetos, informações profissionais e formas de contato 
 
 ## 🌐 Deploy
 
-🖥️ **Acesse o site:** *(link será adicionado após o deploy no Vercel)*
+🖥️ **Acesse o site:** *(https://portifoliowebsteferson.vercel.app)*
 
 ---
 
