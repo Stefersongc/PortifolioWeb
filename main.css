@@ -1,0 +1,269 @@
+:root {
+  --neon: #00bfff;
+  --bg-dark: #0a0a0f;
+  --bg-secondary: #12121a;
+  --text-light: #e6e6e6;
+  --text-muted: #9da3b0;
+}
+
+/* GLOBAL */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 5rem; /* espaçamento entre os links */
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-light) !important;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: var(--neon) !important;
+}
+
+/* HERO */
+.hero {
+  padding: 140px 0;
+  padding-top: 200px;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--neon);
+  text-shadow: 0 0 15px var(--neon);
+}
+.hero .highlight {
+  color: var(--neon);
+}
+.hero p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.btn-neon {
+  background-color: var(--neon);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-neon:hover {
+  box-shadow: 0 0 15px var(--neon);
+  transform: scale(1.05);
+}
+
+/* SEÇÕES */
+section {
+  padding: 90px 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--neon);
+  text-shadow: 0 0 8px var(--neon);
+  font-weight: 600;
+}
+
+/* SOBRE */
+.profile-img {
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 15px var(--neon);
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position:45% 45%;
+}
+
+/* PROJETOS */
+.card {
+  background-color: var(--bg-secondary);
+  border: none;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 15px var(--neon);
+  transform: translateY(-5px);
+}
+
+/* HABILIDADES */
+#skills i {
+  font-size: 3rem;
+  color: var(--neon);
+  text-shadow: 0 0 10px var(--neon);
+}
+
+#skills {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* CONTATO */
+input, textarea {
+  background-color: #1a1a22 !important;
+  border: 1px solid #2a2a33 !important;
+  color: var(--text-light) !important;
+}
+input:focus, textarea:focus {
+  border-color: var(--neon) !important;
+  box-shadow: 0 0 10px var(--neon);
+}
+
+/* RODAPÉ */
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: var(--neon);
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+footer a:hover {
+  text-shadow: 0 0 10px var(--neon);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+h1, h2, nav a {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+ #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* fica atrás do conteúdo */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 40%;
+      font-size: 2rem;
+    }
+
+    #sobre {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center; /* centraliza na vertical */
+    gap: 1.5rem; /* espaçamento mais suave no mobile */
+  }
+
+  #profilefoto {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  #profilefoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* ocupa a largura total para centralizar */
+    height: auto;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    object-position: center; /* garante foco central na imagem */
+  }
+
+  #sobre .row {
+    text-align: center; /* centraliza o texto junto da imagem */
+  }
+}
+
+/* Button hamburguer para o mobile */
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #00ffff;
+  border-radius: 2px;
+  left: 0;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #00ffff80;
+}
+
+.navbar-toggler span:nth-child(1) {
+  top: 5px;
+}
+.navbar-toggler span:nth-child(2) {
+  top: 13px;
+}
+.navbar-toggler span:nth-child(3) {
+  top: 21px;
+}
+
+/* animação para o “X” */
+.navbar-toggler.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+.navbar-toggler.active span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+/* Muda a cor do placeholder para todos os inputs e textareas */
+#contatoForm input::placeholder,
+#contatoForm textarea::placeholder {
+  color: #ffffff; /* substitua pela cor que quiser */
+  opacity: 0.5; /* garante que a cor apareça com força total */
+}
+
+/* Opcional: estilizar quando o campo está focado */
+#contatoForm input:focus::placeholder,
+#contatoForm textarea:focus::placeholder {
+  color: #66d9ff;
+  transition: color 0.3s ease;
+}
